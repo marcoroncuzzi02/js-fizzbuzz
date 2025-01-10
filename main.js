@@ -8,3 +8,26 @@
 // Consigli del giorno:
 // 1. scriviamo sempre prima dei commenti in italiano per capire cosa vogliamo fare
 // 2. proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro programma così come lo faremmo "a mano"
+
+//ciclo for con condizione i <= a 100 partendo da i=0
+//se i è divisibile per 3 (quindi se i/3 da resto 0) console log= fizz
+//se i è divisibile per 5 (quindi se i/5 da resto 0) console log= buzz
+//se i è divisibile per 3 and (&&) per 5 (quindi se i/3 da resto 0 and (&&) se i/5 da resto 0) console log= fizzbuzz
+//(posso usare un if per queste 3 condizioni)
+
+let dividendo3 = 3
+let dividendo5 = 5
+
+for (let i=1; i <= 100; i++ ) {
+    if (i % dividendo5 == 0 && i % dividendo3 == 0){
+        console.log(`buzzfizz, ${i}`) 
+    }
+    else if (i % dividendo3 == 0){
+        console.log(`FIzz, ${i}`) 
+    }
+    else if (i % dividendo5 == 0){
+        console.log(`buzz, ${i}`) 
+    }
+    else
+    console.log(i)
+}
